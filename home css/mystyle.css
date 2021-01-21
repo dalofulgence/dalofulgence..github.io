@@ -20,6 +20,7 @@ header, footer {
 header h1 {
     font-size: 32px;
     padding-left: 95px;
+    font-family: 'Kosugi Maru', sans-serif;
 }
 
 main {
@@ -31,7 +32,6 @@ main h2 {
 }
 
 .profile {
-    float: right;
     box-shadow: 0 0 17px black;
 }
 footer a, footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus {

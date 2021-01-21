@@ -15,18 +15,18 @@ h5 {
 }
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 30px;
-    background-color: blanchedalmond;
-    padding: 32px;
+    grid-gap: 1rem;
   }
+  @media (min-width: 600px) {	.grid-container { grid-template-columns: repeat(2, 1fr); }  }
+  @media (min-width: 900px) {	.grid-container { grid-template-columns: repeat(3, 1fr); }  }
   
-.grid-container > div {
-    background-color: #D3D3D3;
-    text-align: center;
-    padding: 20px 0;
-    border-radius: 15px;
-  }
+.grid-item {
+    background: #fff;	
+    padding: 1.5vw 2vw;	
+    margin: 10px;
+
+}  
+
   
 footer p.highlight {
     color:brown;
