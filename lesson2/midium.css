@@ -1,6 +1,0 @@
-@media only screen and (min-width: 32em) {
-    .grid-container {
-       grid-template-columns:auto auto;
-       gap:1.5em;
-    }
-}
