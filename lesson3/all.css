@@ -97,6 +97,7 @@ footer a:hover {
 footer {
     clear:both;
     text-align: center;
+    background-color:lightblue;
 }
 footer p.legal {
     margin-bottom: 9px;
