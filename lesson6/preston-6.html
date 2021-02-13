@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.ico">    
+    <link rel="stylesheet" href="../lesson5/preston.css">
+    <script src="../lesson5/preston.js"></script>
+    <title>Preston weather Site</title>
+</head>
+<body onload="announceMsg()">
+    <header>
+        <img class="logo" src="../lesson5/kweather.webp" alt="preston logo">
+        <div><h1>Preston Weather</h1></div>
+        <div>
+            <p class="p1">From sun up to sun down, we have the best forcast for you!</p>
+        </div>
+        
+    </header>
+
+    <nav>
+        <ul id="navigation">
+            <li><a href="#" class="ham">&#9776;</a></li>
+            <li><a class ="active"href="../lesson3/index.html">Home</a></li>
+            <li><a class ="active" href="../lesson6/preston-6.html">Preston</a></li>
+            <li><a class ="active" href="../lesson5/sodaspring.html">Soda Springs</a></li>
+            <li><a class ="active" href="../lesson5/fishheaven.html">Fish Haven</a></li>
+            <li><a class ="active" href="../lesson5/stormcenter.html">Storm Center</a></li>
+            <li><a class ="active" href="../lesson5/gallery.html">Gallery</a></li>
+        </ul>   
+    </nav>
+
+    <main>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h2 class="tittle">Preston Idaho</h2>
+                <figure>
+                    <img class="weather-pic" src="../lesson6/weather.jpeg" alt="weather picture" sizes="50vw"
+                        srcset="../lesson6/weather-small.jpeg 200w,
+                        ../lesson6/weather.jpeg 400w
+                        ../lesson6/weather-large.jpeg 800w">
+                </figure> 
+            </div>    
+        
+            <div class="summary">
+                <h3><u>Weather Summary</u></h3>
+                <p>currently: Rainy</p>
+                <p>High: 54 &#8457;</p>
+                <p>Wind Chill: 51 &#8457;</p>
+                <p>Humidity: 95 %</p>
+                <p>Wind Speed: 12 mph</p>
+            </div>
+            <div class="grid-item">
+                <h3><u>5 Days Forecast</u></h3>
+                <p class="forecast">Sat 30: 33F Snow</p>
+                <p class="forecast">Sun 31: 34F Sunny</p>
+                <p class="forecast">Mon 01: 38F Cloudy</p>
+                <p class="forecast">Tue 02: 38F Cloudy</p>
+                <p class="forecast">Wed 03: 31F Snow</p>
+            </div>
+            <div class="article">
+                <h3><u>Article</u></h3>
+                <p>Elder Quentin L. Cook Devotional, January 29, 2021</p>
+                <figure>
+                    <img class="devo" src="../lesson5/dev.jpg">
+                </figure>
+                <p>Thank you, dear President Nelson, for that joyful revelatory guidance with 
+                    respect to witnesses at baptisms and the direction you have
+                     asked us to share to help strengthen youth and develop their sacred potential.
+
+                    Before I share those adjustments, we express our sincere 
+                    appreciation for the exceptional way members have responded to 
+                    developments in the ongoing Restoration of the gospel. As President 
+                    Nelson suggested last year, you have taken your vitamins!1
+                    
+                    You joyfully study Come, Follow Me at home.2 You have also responded 
+                    to adjustments at church. Members of the elders quorum and Relief Society 
+                    sisters unitedly do the work of salvation.3</p>
+            </div>
+            <div class="grid-item">
+                <h3><u>Contact</u></h3>
+                <p>Phone: 208-111-1111</p>
+                <p>E-mail: www.prestonweather.com</p>
+                <img class="map" src="..//lesson5/map.png" alt="preston map">
+            </div>
+        </div>    
+    </main>
+
+    <footer>
+        <p class="footer">&copy;Preston Weather|Fulgence D. Dalo</p>
+        <p><span id="lastupdated"></span></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> 
+</body>
+</html>

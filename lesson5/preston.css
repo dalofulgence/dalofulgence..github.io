@@ -10,33 +10,56 @@ header{
     align-items:center ;
     justify-content: center;
 }
+.weather-pic{
+    width: 100%;
+    margin: 2% 2% 2% 0;
+    position: relative;
 
+}
+.summary{
+    opacity: 0.8;
+    background-color: rgb(236, 236, 130);
+    display: block;
+    position: absolute;
+    width: 200px;
+    left: 100px;
+    top: 60%;
+    font-weight:bold;
+    
+}
+img {
+    width:100;
+}
+.devo{
+    float:right;
+}
 h1, h2, h3{
     color: black;
+    text-align: center;
+}
+.p1 {
+    color: black;
+    margin-top: 90px;
+    margin-left: -290px;
 }
 p {
     color: white;
 }
-
-.head { grid-area: head; }
-.menu { grid-area: menu; }
-.main { grid-area: main; }
-.right { grid-area: right; }
-.foot { grid-area: foot; }
+.article{
+    background-color: #0066b2;
+}
+    
 .grid-container {
     display: grid;
-    grid-template-areas:
-      'head head head head head head'
-      'menu main main main right right'
-      'menu foot foot foot foot foot';
     grid-gap: 10px;
     background-color: #2196F3;
-    padding: 10px;
+    padding: 1rem;;
 }
-.grid-container > div {
+.grid-item{
     background-color: #0066b2;
     text-align: center;
-}    
+}   
+
 .tittle {
     text-align: center;
 }
@@ -47,6 +70,7 @@ p {
 .map {
     width: 100px;
     height: 50px;
+    
 }
 nav {
     margin: 0 auto;
@@ -68,7 +92,6 @@ nav {
 #navigation li {
     display: none;
 }
-
 #navigation a:link, #navigation a:visited, #navigation a:hover, #navigation a:active, #navigation a:focus {
     display: block;
     padding: 0.75em;
@@ -106,18 +129,7 @@ nav {
     }
 
 }
-@media only screen and (min-width: 45.5em) {
-    #navigation {
-        width:400px;
-        margin: 10px auto;
-    }
-}
-@media only screen and (min-width: 75.5em){
-    #navigation {
-        width: 800px;
-        margin: 16px auto;
-    }
-}
+
 .footer, #lastupdated {
     color: white;
     text-align: center;
