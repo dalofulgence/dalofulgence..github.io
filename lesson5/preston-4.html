@@ -10,7 +10,7 @@
     <script src="../lesson5/preston.js"></script>
     <title>Preston weather Site</title>
 </head>
-<body>
+<body onload="announceMsg()">
     <header>
         <img class="logo" src="../lesson5/kweather.webp" alt="preston logo">
         <h1>Preston Weather<br><font size="-1">From sun up to sun down, we have the best forcast for you!</font></h1>
@@ -19,12 +19,12 @@
     <nav>
         <ul id="navigation">
             <li><a href="#" class="ham">&#9776;</a></li>
-            <li><a class ="btn" href="../lesson3/index.html">Home</a></li>
-            <li><a class ="btn active" href="../lesson5/preston-4.html">Preston</a></li>
-            <li><a class ="btn" href="../lesson5/sodaspring.html">Soda Springs</a></li>
-            <li><a class ="btn" href="../lesson5/fishheaven.html">Fish Haven</a></li>
-            <li><a class ="btn" href="../lesson5/stormcenter.html">Storm Center</a></li>
-            <li><a class ="btn" href="../lesson5/gallery.html">Gallery</a></li>
+            <li><a href="../lesson3/index.html">Home</a></li>
+            <li><a class ="active" href="../lesson5/preston-4.html">Preston</a></li>
+            <li><a class ="active" href="../lesson5/sodaspring.html">Soda Springs</a></li>
+            <li><a class ="active" href="../lesson5/fishheaven.html">Fish Haven</a></li>
+            <li><a class ="active" href="../lesson5/stormcenter.html">Storm Center</a></li>
+            <li><a class ="active" href="../lesson5/gallery.html">Gallery</a></li>
         </ul>   
     </nav>
 
@@ -32,7 +32,9 @@
         <div class="grid-container">
             <div class="head">
                 <h2 class="tittle">Preston Idaho</h2>
-                <marquee  id="marquee" behavior="alternate">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion</marquee>
+            </div>    
+            <div id="announce">   
+                <marquee  behavior="alternate">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion</marquee>
             </div>
         
             <div class="right">

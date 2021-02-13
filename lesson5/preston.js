@@ -1,15 +1,21 @@
 var d = new Date();
-document.getElementById("lastupdated").innerHTML = d;
+//document.getElementById("lastupdated").innerHTML = d;
 
-if ( dName == 'Friday') {
-    document.getElementById('marquee').style.display = "block";
+function announceMsg() {
+var day = d.getDay()
+console.log("day", day);
+if ( day === 5) {
+    var element = document.getElementById('announce')
+    element.style.display = "block";
 }    
 else {
-    document.getElementById('marquee').style.display = "none";
+    var element = document.getElementById('announce')
+    element.style.display = "none";
 
+}
 } 
 
-var header = document.getElementById("navigation");
+/*var header = document.getElementById("navigation");
 var btns = header.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
@@ -17,4 +23,4 @@ for (var i = 0; i < btns.length; i++) {
   current[0].className = current[0].className.replace(" active", "");
   this.className += " active";
   });
-}
+}*/
