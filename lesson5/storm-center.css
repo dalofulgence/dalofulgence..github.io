@@ -1,0 +1,119 @@
+body {
+    background-color:#0066b2;
+    font-family: 'PT Mono', monospace;
+    margin:0 auto;
+}
+header{
+    background-color:white;
+    padding: 5px 0;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+h1, h2, h3{
+    color: black;
+    text-align: center;
+}
+
+p {
+    color: white;
+}
+.p1 {
+    color: black;
+    margin-top: 100px;
+    margin-left: -300px;
+}
+.p2 {
+    color: black;
+}
+form {
+    text-align: center;
+    max-width: 100%;
+    margin:10px;
+}
+.tab{
+    display: block;
+    background:rgb(201, 201, 153);	
+    padding: 1.5vw 2vw;	
+    margin-left: 400px;
+    margin-right: 400px;
+    border: #0066b2 solid;
+    max-width: 100%;
+}
+.tittle {
+    text-align: center;
+}
+.logo {
+    width: 88px;
+    height: 88px;
+    align-items: center;
+    margin-left: 400px;
+}
+.map {
+    width: 100px;
+    height: 50px;
+    
+}
+nav {
+    margin: 0 auto;
+    max-width: 360px;
+    background-color: lightblue;
+}
+
+#navigation {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+#navigation li:first-child{
+    display: block;
+}
+
+#navigation li {
+    display: none;
+}
+#navigation a:link, #navigation a:visited, #navigation a:hover, #navigation a:active, #navigation a:focus {
+    display: block;
+    padding: 0.75em;
+    text-align: left;
+    text-decoration: none;
+    color:yellow;
+    font-weight: bold;
+}
+
+#navigation a:hover{
+    color: white;
+    background-color: black;
+}
+
+#navigation.responsive li {
+    display: block;
+}
+
+@media only screen and (min-width: 32.5em){
+    nav {
+        max-width: 100%;
+    }  
+    #navigation {
+        grid-template-columns: repeat(7, auto);
+    }
+    #navigation li {
+        display: block;
+    }
+    #navigation a:link, #navigation a:visited, #navigation a:hover, #navigation a:active, #navigation a:focus {
+        text-align: center;
+    }
+
+    #navigation li:first-child{
+        display: none;
+    }
+
+}
+
+.footer, #lastupdated {
+    color: black;
+    text-align: center;
+    background-color: white;
+}           
