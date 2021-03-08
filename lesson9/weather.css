@@ -1,0 +1,154 @@
+body {
+    background-color: cadetblue;
+    font-family: 'Montserrat Alternates', sans-serif;   
+}
+h1 {
+    text-align: center;
+}
+h2, p {
+    font-weight: bolder;
+    color:black;
+}
+section {
+    color: white;
+    display: grid;
+    text-align: center;
+    grid-gap:10px;
+   border: solid black;
+} 
+img {    
+    width: 100%; 
+    height: auto;
+
+}
+
+main {
+    
+    margin: 1em;
+}
+.footer {
+    color: black;
+    text-align: center;
+    background-color: white;
+}  
+div {
+    margin: 1rem auto; 
+    display:grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    max-width: 1048px;
+    align-content: center;
+    margin-right: 95px;
+    grid-gap:10px;
+}
+@media (max-width: 900px) {	
+    div { grid-template-columns: repeat(2, 1fr); }  
+
+
+}
+
+@media(max-width:600px ){
+    div {
+        max-width: 600px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    h2, p {
+      display: flex;
+        flex-direction: row;
+    }
+    
+    h2, p:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+}
+
+@media (max-width: 400px) {
+    	div { grid-template-columns: repeat(1, 1fr); }  
+}
+
+.tittle {
+    text-align: center;
+}
+.logo {
+    width: 88px;
+    height: 88px;
+}
+.map {
+    width: 100px;
+    height: 50px;
+    
+}
+nav {
+    margin: 0 auto;
+    max-width: 360px;
+    background-color: lightblue;
+}
+
+#navigation {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+#navigation li:first-child{
+    display: block;
+}
+
+#navigation li {
+    display: none;
+}
+#navigation a:link, #navigation a:visited, #navigation a:hover, #navigation a:active, #navigation a:focus {
+    display: block;
+    padding: 0.75em;
+    text-align: left;
+    text-decoration: none;
+    color:yellow;
+    font-weight: bold;
+}
+
+#navigation a:hover{
+    color: white;
+    background-color: black;
+}
+
+#navigation.responsive li {
+    display: block;
+}
+
+@media only screen and (min-width: 32.5em){
+    nav {
+        max-width: 100%;
+    }  
+    #navigation {
+        grid-template-columns: repeat(7, auto);
+    }
+    #navigation li {
+        display: block;
+    }
+    #navigation a:link, #navigation a:visited, #navigation a:hover, #navigation a:active, #navigation a:focus {
+        text-align: center;
+    }
+
+    #navigation li:first-child{
+        display: none;
+    }
+
+}
+
+.footer, #lastupdated {
+    color: white;
+    text-align: center;
+}
+header{
+    background-color:white;
+    padding: 5px 0;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+footer {
+    color: white;
+    text-align: center;
+}      
