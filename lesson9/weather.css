@@ -1,15 +1,20 @@
 body {
-    background-color: cadetblue;
-    font-family: 'Montserrat Alternates', sans-serif;   
+    background-color:#0066b2;
+    font-family: 'PT Mono', monospace;
+    margin:0 auto;
 }
-h1 {
+
+h1, h2, h3{
+    color: black;
     text-align: center;
 }
-h2, p {
-    font-weight: bolder;
-    color:black;
+.p1 {
+    color: black;
+    margin-top: 150px;
+    margin-left: -600px;
 }
 section {
+    background-color: cadetblue;
     color: white;
     display: grid;
     text-align: center;
@@ -73,6 +78,8 @@ div {
 .logo {
     width: 88px;
     height: 88px;
+    align-items: center;
+    margin-left: 400px;
 }
 .map {
     width: 100px;
