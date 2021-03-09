@@ -4,9 +4,10 @@ body {
     margin:0 auto;
 }
 
-h1, h2, h3{
+h1, h2, h3, p{
     color: black;
     text-align: center;
+    margin-top: -10px;
 }
 .p1 {
     color: black;
@@ -19,7 +20,6 @@ section {
     display: grid;
     text-align: center;
     grid-gap:10px;
-   border: solid black;
 } 
 img {    
     width: 100%; 
@@ -52,21 +52,24 @@ div {
 }
 
 @media(max-width:600px ){
-    div {
-        max-width: 600px;
+    section {
         display: flex;
         flex-wrap: wrap;
     }
     
-    h2, p {
+    article {
       display: flex;
         flex-direction: row;
     }
     
-    h2, p:nth-child(odd) {
+    .card section:nth-child(odd) section {
+        flex-direction: row-reverse;
+    }
+    .card section:nth-child(odd) img {
         flex-direction: row-reverse;
     }
 }
+    
 
 @media (max-width: 400px) {
     	div { grid-template-columns: repeat(1, 1fr); }  
@@ -159,3 +162,4 @@ footer {
     color: white;
     text-align: center;
 }      
+

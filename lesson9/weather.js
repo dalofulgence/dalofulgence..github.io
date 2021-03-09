@@ -10,28 +10,34 @@ fetch(requestURL)
 
 
         let card = document.createElement('section');
-        let card2 = document.createElement('section')
-        let card3 = document.createElement('section')
+        let detail = document.createElement('section');
+
+        let card2 = document.createElement('section');
+        let detail2 = document.createElement('section');
+
+        let card3 = document.createElement('section');
+        let detail3 = document.createElement('section');
+
         let name = document.createElement('h2');
         let image = document.createElement('img');
-        let mot = document.createElement('p')
-        let pop = document.createElement('p')
-        let year_founded = document.createElement('p')
-        let rainfall = document.createElement('p')
+        let mot = document.createElement('p');
+        let pop = document.createElement('p');
+        let year_founded = document.createElement('p');
+        let rainfall = document.createElement('p');
 
         let name_2 = document.createElement('h2');
         let image_2 = document.createElement('img');
-        let mot_2 = document.createElement('p')
-        let pop_2 = document.createElement('p')
-        let year_founded_2 = document.createElement('p')
-        let rainfall_2 = document.createElement('p')
+        let mot_2 = document.createElement('p');
+        let pop_2 = document.createElement('p');
+        let year_founded_2 = document.createElement('p');
+        let rainfall_2 = document.createElement('p');
 
         let name_3 = document.createElement('h2');
         let image_3 = document.createElement('img');
-        let mot_3 = document.createElement('p')
-        let pop_3 = document.createElement('p')
-        let year_founded_3 = document.createElement('p')
-        let rainfall_3 = document.createElement('p')
+        let mot_3 = document.createElement('p');
+        let pop_3 = document.createElement('p');
+        let year_founded_3 = document.createElement('p');
+        let rainfall_3 = document.createElement('p');
 
 
 
@@ -59,26 +65,29 @@ fetch(requestURL)
        
 
 
-        card.appendChild(name);
-        card.appendChild(mot);
-        card.appendChild(year_founded);
-        card.appendChild(pop);
-        card.appendChild(rainfall);
+        detail.appendChild(name);
+        detail.appendChild(mot);
+        detail.appendChild(year_founded);
+        detail.appendChild(pop);
+        detail.appendChild(rainfall);
         card.appendChild(image);
+        card.appendChild(detail);
 
-        card2.appendChild(name_2);
-        card2.appendChild(mot_2);
-        card2.appendChild(year_founded_2);
-        card2.appendChild(pop_2);
-        card2.appendChild(rainfall_2);
+        detail2.appendChild(name_2);
+        detail2.appendChild(mot_2);
+        detail2.appendChild(year_founded_2);
+        detail2.appendChild(pop_2);
+        detail2.appendChild(rainfall_2);
         card2.appendChild(image_2);
+        card2.appendChild(detail2);
 
-        card3.appendChild(name_3);
-        card3.appendChild(mot_3);
-        card3.appendChild(year_founded_3);
-        card3.appendChild(pop_3);
-        card3.appendChild(rainfall_3);
+        detail3.appendChild(name_3);
+        detail3.appendChild(mot_3);
+        detail3.appendChild(year_founded_3);
+        detail3.appendChild(pop_3);
+        detail3.appendChild(rainfall_3);
         card3.appendChild(image_3);
+        card3.appendChild(detail3);
         
 
         document.querySelector('div.cards').appendChild(card);
