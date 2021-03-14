@@ -21,17 +21,24 @@ header{
     background-color: rgb(236, 236, 130);
     display: block;
     position: absolute;
-    width: 200px;
+    width: 300px;
     left: 100px;
     top: 60%;
     font-weight:bold;
-    
+    padding-left: 10px;
+ 
+}
+.sum{
+    color: black;
 }
 img {
     width:100px;
 }
 .devo{
-    float:right;
+    float: right;
+    width: 300px;
+    height: 300px;
+    margin:10px;
 }
 h1, h2, h3{
     color: black;
@@ -68,8 +75,8 @@ p {
     height: 88px;
 }
 .map {
-    width: 100px;
-    height: 50px;
+    width: 200px;
+    height: 200px;
     
 }
 nav {
