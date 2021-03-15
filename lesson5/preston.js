@@ -25,7 +25,7 @@ for (var i = 0; i < btns.length; i++) {
   });
 }*/
 
-const apiURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=f5597f72a3504f64f27f4c96c72b88cc&units=imperial";
+const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=f5597f72a3504f64f27f4c96c72b88cc&units=imperial";
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
