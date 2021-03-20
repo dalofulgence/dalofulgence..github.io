@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">      
+    <link rel="stylesheet" href="../css/preston.css">
+    <script src="../js/preston.js"></script>
+    <title>Preston weather Site</title>
+</head>
+<body onload="announceMsg()">
+    <header>
+        <img class="logo" src="../image/kweather.webp" alt="preston logo">
+       
+        <div>
+            
+            <h1 class="title">Preston Weather</h1>
+            <marquee><p class="p1">From sun up to sun down, we have the best forcast for you!</p></marquee>
+        </div>
+        <div class="search"><input type="text" placeholder="Search city or zip code..."></div>
+        <div class="farenheit">&#8457; | &#9729;</div>
+    </header>
+    <nav>
+        <ul id="navigation">
+            <li><a href="#" class="ham">&#9776;</a></li>
+            <li><a href="../index/weather-home.html">Home</a></li>
+            <li><a href="../index/preston.html">Preston</a></li>
+            <li><a href="../index/sodaspring.html">Soda Springs</a></li>
+            <li><a href="../index/fishheaven.html">Fish Haven</a></li>
+            <li><a href="../index/stormcenter.html">Storm Center</a></li>
+            <li><a href="../index/gallery.html">Gallery</a></li>
+        </ul>   
+    </nav>
+    <main>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h2 class="tittle">Preston Idaho</h2>
+                <figure>
+                    <img class="weather-pic" src="../image/weather.jpeg" alt="weather picture">
+                </figure> 
+            </div>    
+        
+            <div class="summary">
+                <h3><u>Weather Summary</u></h3>
+                <p class="sum">currently: <span id="currently"></span></p>
+                <p class="sum">High: <span id="high"></span>&#8457;</p>
+                <p class="sum">Wind Chill: <span id="wind"></span>&#8457;</p>
+                <p class="sum">Humidity: <span id="humidity"></span>%</p>
+                <p class="sum">Wind Speed: <span id="speed"></span>mph</p>
+            </div>
+            
+
+            <div class="forecast">
+                <h3><u>Five Days Forecast</u></h3>
+                <div>Sunday</div>
+                <div>Monday</div>
+                <div>Tuesday</div>
+                <div>Wednesday</div>
+                <div>Thursday</div>
+
+            </div>
+
+
+
+            <div class="article">
+                <h3><u>Article</u></h3>
+                <p>Elder Quentin L. Cook Devotional, January 29, 2021</p>
+                <figure>
+                    <img class="devo" src="../image/dev.jpg">
+                </figure>
+                <p>Thank you, dear President Nelson, for that joyful revelatory guidance with 
+                    respect to witnesses at baptisms and the direction you have
+                     asked us to share to help strengthen youth and develop their sacred potential.
+
+                    Before I share those adjustments, we express our sincere 
+                    appreciation for the exceptional way members have responded to 
+                    developments in the ongoing Restoration of the gospel. As President 
+                    Nelson suggested last year, you have taken your vitamins!1
+                    
+                    You joyfully study Come, Follow Me at home.2 You have also responded 
+                    to adjustments at church. Members of the elders quorum and Relief Society 
+                    sisters unitedly do the work of salvation.3
+                    It was clear to Israel that Moses spoke for God. God would meet with Moses in the tent of meeting and give him words to say to the people.
+
+                    So when Joshua heard about two men who had prophesied in the camp, 
+                    it made sense that he would want to protect Moses’ unique role as 
+                    God’s prophet. But Moses responded, “Are you jealous for my sake? 
+                    I wish that all the Lord’s people were prophets and that the Lord 
+                    would put his Spirit on them!” Moses was not threatened; instead, 
+                    he saw what a 
+                    blessing it would be if all God’s people would speak for and from God.
+                    Moses’ desire was fulfilled centuries later when the Spirit of God came 
+                    to God’s people on Pentecost (Acts 2). The prophet Joel had proclaimed that 
+                    a day was coming when God’s Spirit would be poured out on all people. And on 
+                    Pentecost the crowds of visitors from all nations heard the followers of Jesus 
+                    declaring the wonders of God in their own languages. The age of the Spirit had 
+                    come because our chief prophet, Jesus, 
+                    had provided us salvation and given his followers new life in the Spirit.</p>
+            </div>
+           
+        </div>    
+    </main>
+
+    <footer>
+        <div class="grid-item">
+            <h3><u>Contact</u></h3>
+            <p>&#9742;: 208-111-1111</p>
+            <p>&#9993;: www.prestonweather.com</p>
+            <img class="map" src="../image/map.png" alt="preston map">
+        </div>
+        <div class="stickyicon-list">  
+            <a href="#facebook" class="facebook">   
+            <i class="fa fa-facebook"></i>   
+            </a>   
+            <a href="#twitter" class="twitter">   
+            <i class="fa fa-twitter"></i>   
+            </a>       
+            <a href="#linkedin" class="linkedin">   
+            <i class="fa fa-linkedin"></i>   
+            </a>   
+            <a href="#google" class="google">   
+            <i class="fa fa-google"></i>   
+            </a>     
+            <a href="#instagram" class="instagram">   
+            <i class="fa fa-instagram"></i>   
+            </a>                              
+            <a href="#youtube" class="youtube">   
+            <i class="fa fa-youtube"></i>   
+            </a>   
+        </div>   
+        <p class="footer">&copy;Preston Weather|Fulgence D. Dalo</p>
+        <p><span id="lastupdated"></span></p>
+    
+    </footer>   
+</body>
+</html>
