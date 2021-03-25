@@ -1,0 +1,48 @@
+@import "normalized";
+
+@import "small";
+
+@import "medium";
+
+$background:#ffffff88;
+$blue: rgb(11, 117, 223);
+$h3:#ffffff48;
+$h2:#ffffff28;
+
+body{
+    font-family:'Open Sans', sans-serif;
+}
+
+.order{
+    background-color: $background;
+    .progress{
+        background-color: $blue;
+        display: grid;
+        list-style: none;
+        grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+        width: 80px;
+        margin: 0 auto;
+        color: white;
+        text-align: center;
+        font-size: 1.9em;
+        padding: 0;
+        height: 50px;
+        align-items: center;
+        gap: 17px;
+    }    
+    .blue{
+        color: $blue;
+    }
+    .next{
+        background-color: $blue;
+        color: white;
+        padding: -10px;
+        margin-right: 20px;
+    }
+    table{
+        background-color: $background;
+    }
+    
+
+   
+}    
