@@ -28,6 +28,10 @@ header{
     padding-left: 10px;
  
 }
+.forecast{
+    color: white;
+    text-align: center;
+}    
 .sum{
     color: black;
 }

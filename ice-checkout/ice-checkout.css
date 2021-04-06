@@ -1,2 +1,69 @@
-body{font-family:'Open Sans', sans-serif}.order{display:-ms-grid;display:grid;-ms-grid-columns:(1fr)[2];grid-template-columns:repeat(2, 1fr);max-width:50%}@media only screen and (max-width: 400px){.order{-ms-grid-columns:1fr;grid-template-columns:1fr}}@media only screen and (max-width: 800px){.order{-ms-grid-columns:reapeat(2, 1fr);grid-template-columns:reapeat(2, 1fr)}}body{font-family:'Open Sans', sans-serif}.order{background-color:#ffffff88}.order .progress{background-color:#0b75df;display:-ms-grid;display:grid;list-style:none;-ms-grid-columns:1fr 2fr 1fr 2fr 1fr;grid-template-columns:1fr 2fr 1fr 2fr 1fr;width:80px;margin:0 auto;color:white;text-align:center;font-size:1.9em;padding:0;height:50px;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:17px}.order .blue{color:#0b75df}.order .next{background-color:#0b75df;color:white;padding:-10px;margin-right:20px}.order table{background-color:#ffffff88}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.order {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  max-width: 50%;
+}
+
+@media only screen and (max-width: 400px) {
+  .order {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .order {
+    -ms-grid-columns: reapeat(2, 1fr);
+        grid-template-columns: reapeat(2, 1fr);
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.order {
+  background-color: #ffffff88;
+}
+
+.order .progress {
+  background-color: #0b75df;
+  display: -ms-grid;
+  display: grid;
+  list-style: none;
+  -ms-grid-columns: 1fr 2fr 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+  width: 80px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  font-size: 1.9em;
+  padding: 0;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 17px;
+}
+
+.order .blue {
+  color: #0b75df;
+}
+
+.order .next {
+  background-color: #0b75df;
+  color: white;
+  padding: -10px;
+  margin-right: 20px;
+}
+
+.order table {
+  background-color: #ffffff88;
+}
 /*# sourceMappingURL=ice-checkout.css.map */

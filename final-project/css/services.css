@@ -1,0 +1,261 @@
+
+/***header***/
+.logo{
+    width: 60px;
+    height: 60px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+h1{
+    margin-left: -565px;
+    margin-top: 45px;
+    font-family: 'Ballet', cursive;
+}
+.search{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/***header***/
+
+/***navigation***/
+nav {
+    position: fixed;
+    overflow: hidden;
+    margin-top: -20px;
+    width: 100%;
+    background-color:#F6DDCC;
+}
+
+#navigation {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+#navigation li:first-child{
+    display: block;
+}
+
+#navigation li {
+    display: none;
+}
+#navigation a:link, #navigation a:visited, #navigation a:hover, #navigation a:active, #navigation a:focus {
+    display: block;
+    padding: 0.75em;
+    text-align: center;
+    text-decoration:wavy;
+    color:#909497;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+}
+
+#navigation a:hover{
+    color: white;
+    background-color: black;
+}
+#navigation a:active{
+    background-color: rgb(75, 64, 4);
+}
+
+#navigation.responsive li {
+    display: block;
+}
+
+/***Navigation***/
+
+/***Media Queries***/
+
+@media (min-width: 376px) {
+    
+    nav {
+        max-width: 100%;
+    }  
+    #navigation {
+        grid-template-columns: repeat(7, auto);
+    }
+    #navigation li {
+        display: block;
+    }
+    #navigation a:link, #navigation a:visited, #navigation a:hover, #navigation a:active, #navigation a:focus {
+        text-align: center;
+    }
+
+    #navigation li:first-child{
+        display: none;
+    } 
+}
+
+@media only screen and (min-width: 769px){
+   
+    .temple{
+        grid-template-columns: 1fr 1fr;
+    }
+    nav {
+        max-width: 100%;
+    }  
+    #navigation {
+        grid-template-columns: repeat(7, auto);
+    }
+    #navigation li {
+        display: block;
+    }
+    #navigation a:link, #navigation a:visited, #navigation a:hover, #navigation a:active, #navigation a:focus {
+        text-align: center;
+    }
+
+    #navigation li:first-child{
+        display: none;
+    }
+
+}
+
+/***Media Queries***/
+
+
+/***gallery***/
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+    font-family: Arial;
+}
+  
+  /* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+  
+  /* Style the images inside the grid */
+.column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+  
+.column img:hover {
+    opacity: 1;
+}
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  /* The expanding image container */
+.container {
+    position: relative;
+    display: none;
+}
+#expandedImg{
+    content: center;
+}
+main {
+    display: block;
+    color: white;
+    font-family:'Lora', serif; 
+    content: center;
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 20px solid rgb(75, 64, 4);
+    background: black;
+    margin-top: 100px;
+}
+  
+  /* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+  
+  /* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+.gallery{
+    padding-top: 50px;
+}
+.img{
+    width: 300px;
+    height: 300px;
+}
+/***gallery***/
+
+/***footer***/
+.stickyicon-list {   
+    position: fixed;   
+    top: 400px;   
+    transform: translateY(-50%);             
+}         
+.stickyicon-list a {   
+    display: block;   
+    text-align: center;   
+    padding: 8px;   
+    transition: all 0.5s ease;   
+    color: white;   
+    font-size: 20px;   
+}         
+    /* HOver affect on sticky social media icons */   
+.stickyicon-list a:hover {   
+    color: #000;   
+    width:10px;   
+}   
+                
+.facebook {   
+    background: #3b5998;   
+    color: white;  
+}         
+.twitter {   
+    color: white;   
+    background: #00acee;   
+}   
+.linkedin {   
+    background: #0e76a8;   
+    color: white;   
+}         
+.google {   
+    color: white;   
+    background: #db4a39;   
+}   
+.instagram {   
+    background: #3f729b;   
+    color: white;   
+}         
+.youtube {   
+    color: white;   
+    background: #c4302b;    
+} 
+.footer, #lastupdated {
+    text-align: center;
+}
+
+footer {
+    background-color:#909497 ;
+    text-align: center;
+}  
+/***footer***/

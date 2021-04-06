@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon (1).ico">  
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ballet&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <script src="../js/home.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Services</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="../image/logo.webp" alt="hotel logo">
+        <div class="title"><h1>Temple Inn & Suites</h1></div>
+       
+    </header>
+    
+    <nav>
+        <ul id="navigation">
+            <li><a href="#" class="ham">&#9776;</a></li>
+            <li><a class ="active" href="../html/home.html">Home</a></li>
+            <li><a class ="active" href="../html/temple.html">Temples</a></li>
+            <li><a class ="active" href="../html/reservation.html">Reservation</a></li>
+            <li><a class ="active" href="../html/services.html">Services</a></li>
+            <li><a class ="active" href="../html/contact.html">Contact</a></li>
+        </ul>   
+    </nav>
+    <main>
+        <video  autoplay muted loop id="myVideo">
+            <source src="../image/video2.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+          
+        <div class="content">
+            <div class="tab">Check In:
+                <p> <input type="date" id="date" name="date"></p>
+            </div>
+            <div class="tab">Check Out:
+                <p> <input type="date" id="date" name="date"></p>
+            </div>
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+        </div>
+        <div class="message">
+            <h3>Temple Local</h3>
+            <p>
+            Adjacent to the Brigham Young University–Idaho campus, 
+            the five-story Rexburg Idaho Temple soars high above its hillside location, creating a 
+            striking landmark visible for miles along the Highway 20 corridor. It is the finest, 
+            most notable building in this rural community. West of the temple lies a beautiful 
+            garden area open to the public for quiet strolls or moments of reflection.</p>
+
+            <h3>Our Commitment to You</h3>
+            We’re committed to creating a safe and relaxing experience, including delivering an even cleaner stay from check-in to check-out. By offering continued travel flexibility and putting the health and safety of our guest and team members front and center, 
+            we will provide complete peace of mind when you stay with any of our 18 brands across the world.
+        </div>
+        <div class="temple">
+            <figure>
+            <img class="temple-img" src="../image/rexburg-temple.jpg" alt="rexburg temple">
+            <figcaption>Rexburg Temple</figcaption>
+            </figure>
+            <figure>
+            <img class="temple-img" src="../image/idaho-temple.jpg" alt="Idaho falls temple">
+            <figcaption>Idaho Falls Temple</figcaption>
+            </figure>
+            <figure>
+            <img class="temple-img" src="../image/boise-temple.jpg" alt="boise temple">
+            <figcaption>Boise Temple</figcaption>
+            </figure>
+        </div>
+    </main>    
+
+    <footer>
+        <div class="stickyicon-list">  
+            <a href="#facebook" class="facebook">   
+            <i class="fa fa-facebook"></i>   
+            </a>   
+            <a href="#twitter" class="twitter">   
+            <i class="fa fa-twitter"></i>   
+            </a>       
+            <a href="#linkedin" class="linkedin">   
+            <i class="fa fa-linkedin"></i>   
+            </a>   
+            <a href="#google" class="google">   
+            <i class="fa fa-google"></i>   
+            </a>     
+            <a href="#instagram" class="instagram">   
+            <i class="fa fa-instagram"></i>   
+            </a>                              
+            <a href="#youtube" class="youtube">   
+            <i class="fa fa-youtube"></i>   
+            </a>   
+        </div>   
+        <div class="grid-item">
+            <h3><u>Contact</u></h3>
+            <p>&#9742;: 208-111-1111</p>
+            <p>&#9993;: www.templeinnsuites.com</p>
+            <p class="footer">&copy;Temple Inn & Suites|Fulgence D. Dalo</p>
+            <p><span id="lastupdated"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

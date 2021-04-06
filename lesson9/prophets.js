@@ -15,7 +15,9 @@ fetch(requestURL)
         let image = document.createElement('img');
         let date_birth = document.createElement('p')
         let place_birth = document.createElement('p')
-
+      if(prophets[i].birthplace === 'Utah'){
+          
+      
         h2.textContent = prophets[i].name + ' ' + prophets[i].lastname + '-' + prophets[i].order;
         date_birth.textContent = "Date Of Birth: " + prophets[i].birthdate;
         place_birth.textContent = "Place Of Birth: " + prophets[i].birthplace;
@@ -30,6 +32,7 @@ fetch(requestURL)
         
 
         document.querySelector('div.cards').appendChild(card);}
+      }
   });
 
 
