@@ -125,6 +125,7 @@ img{
     height: 300px;
 }
 main{
+    margin-top: 60px;
     display: block;
     color: white;
     font-family:'Lora', serif; 
