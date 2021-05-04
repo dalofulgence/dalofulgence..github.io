@@ -1,0 +1,19 @@
+body {
+    background-color:bisque;
+    font-family: 'PT Mono', monospace;
+    margin:0 auto;
+    text-align: center;
+}
+header{
+    background-color:white;
+    padding: 5px 0;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+nav {
+    margin: 0 auto;
+    max-width: 360px;
+    background-color:coral
+}
+
