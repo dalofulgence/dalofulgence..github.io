@@ -4,25 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dalofulgence.github.io/all.css">
     <title>Week 3</title>
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="/FrontEend2/Week-1/index.html">Week 1 Note</a></li>
-            <li><a href="/FrontEend2/Week-2/index.html">Week 2 Note</a></li>
-            <li><a href="/FrontEend2/Week-3/index.html">Week 3 Note</a></li>
+            <li><a href="/dalofulgence.github.io/portfolio/portfolio.html">Home</a></li>
+            <li><a href="/dalofulgence.github.io/Week-1/index.html">Week 1 Note</a></li>
+            <li><a href="/dalofulgence.github.io/Week-2/index.html">Week 2 Note</a></li>
+            <li><a href="/dalofulgence.github.io/Week-3/index.html">Week 3 Note</a></li>
+            <li><a href="/dalofulgence.github.io/Week-3/team.html">Team Assignment</a></li>
         </ul>
     </nav>
     <header>
         <h1>WEEK 3 NOTES/ CODE</h1>
     </header>
     <main>
-       
+        <h2>Reading Notes</h2>
+        <p> object is a self-contained set of related values and functions<br>
+        Ex:  const superman = {
+            name: 'Superman',
+            'real name': 'Clark Kent',
+            height: 75,
+            weight: 235,
+            hero: true,
+            villain: false,
+            allies: ['Batman','Supergirl','Superboy'],
+            fly() {
+                return 'Up, up and away!';
+            }
+        };<br>
+        Acessing properties: superman.name or superman['name']=  'Superman'<br></p>
+        <p>Finding all properties: for(const key in superman) {
+            console.log(key + ": " + superman[key]);
+        }
+        << "name: Superman"
+        << "real name: Clark Kent"
+        << "height: 75"
+        << "weight: 235"
+        << "hero: true"
+        << "villain: false"
+        << "allies: Batman,Supergirl,Superboy"
+        << "fly: function (){
+            console.log(\"Up, up and away!\");
+        }"</p> 
+        <p>accessing keys: for(const key of Object.keys(superman)) {
+            console.log(key);</p>
+        <p>Accessing values: for(const value of Object.values(superman)) {
+            console.log(value);</p> 
+        <p>Adding properties: superman.city = 'Metropolis';</p>    
+
     </main>
     <footer>
 
     </footer>
-    <script src="/FrontEend2/Week-3/week-3.js"></script>
+    <script src="/dalofulgence.github.io/Week-3/week-3.js"></script>
 </body>
 </html>
