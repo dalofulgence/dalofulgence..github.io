@@ -1,11 +1,9 @@
- function startGame() {
 
-     clearBox("col border-r");
-     clearBox("col");
+function ticTacToe(){
+    const container = document.querySelector('.container');
+    for (let i = 0; i < container.children.length; i++) {
+        container.children[i].innerText = '';
+    }
 
-     if (Math.random() < 0.5) {
-         document.turn = "X";
-     } else {
-         document.turn = "O";
-     }
- }
+    container.addEventListener('click');
+}
