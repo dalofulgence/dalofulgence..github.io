@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../all.css">
+    <title>Week 5</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../portfolio/portfolio.html">Home</a></li>
+            <li><a href="../Week-5/index.html">Week 5 Note</a></li>
+            <li><a href="../Week-5/team.html">Team assignment</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>WEEK 5 NOTES/ CODE</h1>
+    </header>
+    <main>
+        <h2>Exceptions</h2>
+        <p>error that returns value:<br> unicorn();
+        ReferenceError: unicorn is not defined </p>
+        <h2>Stack Trace</h2>
+        <p>tracks where the error occured: <br>
+            function three(){ unicorn(); }
+            function two(){ three(); }
+            function one(){ two(); }
+            one();<br>
+            << index.html:13 Uncaught ReferenceError: unicorn is not defined
+                at three (index.html:13)
+                at two (index.html:17)
+                at one (index.html:21)
+                at index.html:24`</p>
+                <h2>warning</h2>
+                <p>A warning can occur if there’s an error in the code that 
+                isn't enough to cause the program to crash.</p>
+                <h2>trict Mode</h2>
+                <p>produces more exception and warning</p>
+                <h2>Debugging</h2>
+                <p>Debugging is the process of finding out where bugs
+                occur in the code and then dealing with them.</p>
+                <h2>Linting tool</h2>
+                <p>used to test the quality of JavaScript code<br>
+                highlight any sloppy programming practices or syntax errors</p>
+                <h2>trusty</h2>
+                <p>The most basic form of debugging is to use: alert()</p>
+                <p>function amIOldEnough(age){
+                    if (age = 12) {
+                        alert(age);
+                        return 'No, sorry.';
+                    } else if (age < 18) {
+                        return 'Only if you are accompanied by an adult.';
+                    }
+                    else {
+                        return 'Yep, come on in!';
+                    }</p>
+                    <h2>Other errors</h2>
+                    <p>RangeError is thrown when a number is outside an allowable range of values.<br>
+
+                        ReferenceError is thrown when a reference is made to an item that doesn’t exist. For example, calling a function that hasn't been defined.<br>
+                       
+                        SyntaxError is thrown when there’s an error in the code’s syntax.<br>
+                       
+                        TypeError is thrown when there’s an error in the type of value used; for example, a string is used when a number is expected.<br>
+                       
+                        URIError is thrown when there’s a problem encoding or decoding the URI.<br>
+                       
+                        InternalError is a non-standard error that is thrown when an error occurs in the JavaScript engine. A common cause of this too much recursion.<br>
+                       
+                       These error objects can also be used as constructors to create custom error objects:<br>
+                       
+                       const error = new TypeError('You need to use numbers in this function');</p>
+
+                       <h2>Try , Catch, Finally</h2>
+                       <p>function imaginarySquareRoot(number) {
+                        'use strict';
+                        try {
+                            return String(squareRoot(number));
+                        } catch(error) {
+                            return squareRoot(-number)+'i';
+                        }
+                    }</p>
+    </main>
+    <footer>
+    </footer>
+    <script src="../Week-5/week-5.js"></script>
+</body>
+</html>
