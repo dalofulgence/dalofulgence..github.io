@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../all.css">
+    <title>Week 5</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../portfolio/portfolio.html">Home</a></li>
+            <li><a href="../Week-7/index.html">Week 7 Note</a></li>
+            <li><a href="../Week-7/hiking-complete.html">Team assignment</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>WEEK 7 NOTES/ CODE</h1>
+    </header>
+    <main>
+        <h2>Chapter 11</h2>
+        <h4>Call and apply  method</h4>
+        <p>the call method is used to set this. inside function<b>
+            function sayHello(){
+                return `Hello, my name is ${ this.name }`;
+            }<br>const clark = { name: 'Clark' };<br>
+            const bruce = { name: 'Bruce' };<br>
+            sayHello.call(clark);<br>
+            << 'Hello, my name is Clarke'<br>
+            sayHello.call(bruce);<br>
+            << 'Hello, my name is Bruce'<br>
+            If the function that’s called requires any parameters, <br>
+            these need to be provided<br>
+             as arguments after the first argument</br>
+             function sayHello(greeting='Hello'){<br>
+                return `${ greeting }, my name is ${ this.name }`;
+            }<br>
+            sayHello.call(clark, 'How do you do');<br>
+            << 'How do you do, my name is Clark'<br>
+            sayHello.call(bruce);<br>
+            << 'Hello, my name is Bruce'<br>
+            If a function doesn’t refer to an object as this in its body, provide "null" as first argument</p>
+        <h4>Immediately Invoked Function Expressions</h4> 
+        <p>anonymous function that is invoked as soon as it’s defined<br>
+            (function(){<br>
+                const temp = 'World';<br>
+                console.log(`Hello ${temp}`);<br>
+                })();<br>
+                << 'Hello World'</p> 
+        <p>temp variable cannot be removed frome scope once declared</p>  
+
+    </main>
+    <footer>
+    </footer>
+    <script src="../Week-6/week-7.js"></script>
+</body>
+
+</html>
