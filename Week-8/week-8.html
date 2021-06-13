@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.css">
+    <title>Week 8</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../portfolio/portfolio.html">Home</a></li>
+            <li><a href="../Week-8/week-8.html">Week 8 Note</a></li>
+            <li><a href="../Week-8/team.html">Team assignment</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>WEEK 8 NOTES/ CODE</h1>
+    </header>
+    <main>
+        <h2>Forms</h2>
+        <p>made up of a "form" element that contains congrols like inputs, buttons, submits etc..</p>
+        <h4>forms types</h4>
+        <p>searching:<br>
+            <form name='search' action='/search'>
+                <input name='searchInput'>
+                <button type='submit'>Search</button>
+            </form> <br>
+        the action attribute is the url the form will be submitted to.<br>
+     accessing form: const form = document.forms[index];<br>
+     const form = document.getElementsByTagname('form')[0];<br>
+     const form = document.forms.search;<br>
+     const form = document.forms['search'];
+    </p>
+    <h4>Form properties and methods</h4>
+    <p>The form.submit() method will submit the form automatically.<br>
+        The form.reset() method will reset all the form controls back to their initial values specified in the HTML.<br>
+        The form.action property can be used to set the action attribute of a form<br>
+        The focus event occurs when an element is focused on.<br>
+        const input = form.elements.searchInput;<br>
+        input.addEventListener('focus', () => alert('focused'), false);</p>
+        <p>The blur event occurs when the user moves the focus away from the form element. <br>
+            input.addEventListener('blur', () => alert('blurred'), false);</p>
+        <h4>submiting forms</h4>
+        <p>const form = document.forms['search'];<br>
+            form.addEventListener ('submit', search, false);<br>
+            function search() {<br>
+                alert(' Form Submitted');<br>
+            }</p>
+            <h4>Forms control</h4>
+            <p> "input" fields, including text, passwords, check boxes, radio buttons, and file uploads<br>
+
+                "select" menus for drop-down lists of options<br>
+               
+                "textarea" elements for longer text entry<br>
+               
+                "button" elements for submitting and resetting forms</p>
+
+    </main>
+    <footer>
+    </footer>
+    <script src="../Week-8/week-8.js"></script>
+</body>
+
+</html>

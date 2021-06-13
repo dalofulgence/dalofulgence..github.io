@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+div{
+    display: block;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+ul{
+    display: block;
+    
+}
+h2{
+    color: blue;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+}
+li{
+    font-style: italic;
+    
+   
+}
+ul:nth-child(even) {
+    background: #CCC;
+}
+ul:nth-child(odd) {
+    background: rgb(138, 177, 170);
+}
+button{
+    margin-left: 100px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border: thin;
+}
