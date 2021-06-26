@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon (1).ico">  
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ballet&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/reservation.css">
+    <script src="../js/reservation.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Reservation</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="../image/logo.webp" alt="hotel logo">
+        <div class="title"><h1>Temple Inn & Suites</h1></div>
+       
+    </header>
+    <nav>
+        <ul id="navigation">
+            <li><a href="#" class="ham">&#9776;</a></li>
+            <li><a class ="active" href="../html/home.html">Home</a></li>
+            <li><a class ="active" href="../html/temple.html">Temples</a></li>
+            <li><a class ="active" href="../html/reservation.html">Reservation</a></li>
+            <li><a class ="active" href="../html/services.html">Services</a></li>
+            <li><a class ="active" href="../html/contact.html">Contact</a></li>
+        </ul>   
+    </nav>
+    <main>
+  
+        <article>
+          <h2 id="main">Reservations</h2>
+          <form id="formfill">
+            <fieldset id="contactinfo">
+              <legend><span>Contact Information</span></legend>
+              <label>
+                Name
+                <input type="text" name="name" id="nameinput" placeholder="First and last name" />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" id="emailinput" placeholder="address@example.com" />
+              </label>
+              <label>
+                Phone
+                <input type="text" name="phone" id="phoneinput" placeholder="555-123-4567" />
+              </label>
+            </fieldset>
+            <fieldset id="reservationinfo">
+              <legend><span>Reservation Information</span></legend>
+              <fieldset id="location">
+                <legend>Location</legend>
+                  <select id="location" name="location">
+                    <option>Select location</option>
+                    <option value="Rexburg">Rexburg</option>
+                    <option value="Idaho Falls">Idaho falls</option>
+                    <option value="Boise">Boise</option>
+                    <option value="Twin Falls">Twin falls</option>
+                    </select>
+              </fieldset>
+              <fieldset id="bedpref">
+                <legend>Bed preference</legend>
+                <label for="kingqueen">
+                  <input type="checkbox" id="kingqueen" value="King/Queen" name="bedpref" />
+                  King/Queen
+                </label>
+                <label for="twin">
+                  <input type="checkbox" id="twin" value="Twin" name="bedpref" />
+                  Twin
+                </label>
+                <label>
+                  <input type="checkbox" id="othermix" value="Other/Mix" name="bedpref" />
+                  Other/Mix (please specify in Additional Information section below)
+                </label>
+              </fieldset>
+              <fieldset id="checkin">
+                <legend>Check-in date</legend>
+                  <select id="inmonth" name="inmonth">
+                    <option value="01">April</option>
+                    <option value="02">May</option>
+                    <option value="03">June</option>
+                    <option value="04">July</option>
+                    <option value="05">August</option>
+                    <option value="06">September</option>
+                    <option value="07">October</option>
+                    <option value="08">November</option>
+                    <option value="09">December</option>
+                  </select>
+                  <select id="indate" name="indate">
+                    <option value="01">1</option>
+                    <option value="02">2</option>
+                    <option value="03">3</option>
+                    <option value="04">4</option>
+                    <option value="05">5</option>
+                    <option value="06">6</option>
+                    <option value="07">7</option>
+                    <option value="08">8</option>
+                    <option value="09">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                  </select> 
+                  <select id="inyear" name="inyear">   
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                  </select>
+              </fieldset>
+              <fieldset id="checkout">
+                <legend>Check-out date</legend>
+                  <select id="outmonth" name="outmonth">
+                    <option value="01">April</option>
+                    <option value="02">May</option>
+                    <option value="03">June</option>
+                    <option value="04">July</option>
+                    <option value="05">August</option>
+                    <option value="06">September</option>
+                    <option value="07">October</option>
+                    <option value="08">November</option>
+                    <option value="09">December</option>
+                  </select>
+                  <select id="outdate" name="outdate">
+                    <option value="01">1</option>
+                    <option value="02">2</option>
+                    <option value="03">3</option>
+                    <option value="04">4</option>
+                    <option value="05">5</option>
+                    <option value="06">6</option>
+                    <option value="07">7</option>
+                    <option value="08">8</option>
+                    <option value="09">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                  </select> 
+                  <select id="outyear" name="outyear">   
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                  </select>
+              </fieldset>
+              <fieldset id="parking">
+                <legend>Parking</legend>
+                <label>
+                  I need parking for
+                <input type="number" name="parking" id="parkinginput" min="0" max="22" />
+                  vehicles.
+                </label>
+              </fieldset>
+            </fieldset>
+            <fieldset id="additionalinfo">
+              <legend><span>Additional Information</span></legend>
+              <label>
+                Feedback, special requests, or other information
+                <textarea id="feedback" name="feedback" rows="4" cols="55"></textarea>
+              </label>
+            </fieldset>
+            <fieldset id="submitbutton">
+              <input type="submit" id="submit" value="Submit" />
+            </fieldset>
+          </form>
+        </article>
+      </div>
+    </body>
+  </html>
+    </main>
+
+    <footer>
+        
+        <div class="grid-item">
+            <h3><u>Contact</u></h3>
+            <p>&#9742;: 208-111-1111</p>
+            <p>&#9993;: www.templeinnsuites.com</p>
+            <p class="footer">&copy;Temple Inn & Suites|Fulgence D. Dalo</p>
+            <p><span id="lastupdated"></span></p>
+        </div>
+
+    </footer>
+</body>
+</html>    
+        
