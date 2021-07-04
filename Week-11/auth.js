@@ -1,6 +1,6 @@
 //Auth class which provides basic JWT based authentication for our app.
 // Requires: access to the makeRequest  functions
-import { makeRequest } from './authHelpers.js';
+import { makeRequest } from './authHelpers.js';;
 export default class Auth {
     constructor() {
         this.jwtToken = '';

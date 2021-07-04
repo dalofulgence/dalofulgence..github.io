@@ -1,4 +1,4 @@
-import { makeRequest } from "./authHelpers.js";
+import { makeRequest } from "./authHelpers.js";;
 import { Auth } from "./auth.js";
 
 makeRequest('login', 'POST', {
