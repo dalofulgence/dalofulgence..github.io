@@ -21,7 +21,41 @@
         <h1>WEEK 10 NOTES/ CODE</h1>
     </header>
     <main>
-        
+        <h3>Form Validation</h3>
+        <p>provides feedback when you don't enter your data in the format they are expecting<br>
+        Client Validation: Built in form validation => uses HTML5 form validation features<br>
+    Validating against Rex Expression => Uses paterns<br>
+Validating Using Javascript: Contraint Validation API => <br>
+HTMLButtonElement (represents a 'button' element)
+    HTMLFieldSetElement (represents a 'fieldset' element)
+    HTMLInputElement (represents an 'input' element)
+    HTMLOutputElement (represents an 'output' element)
+    HTMLSelectElement (represents a 'select' element)
+    HTMLTextAreaElement (represents a 'textarea' element)</p>
+    <p>validationMessage: Returns a localized message describing the validation constraints that the control doesn't satisfy (if any)<br>
+        validity: Returns a ValidityState object that contains several properties describing the validity state of the element<br>
+        checkValidity(): Returns true if the element's value has no validity problems; false otherwise.<br>
+    </p>
+    <h3>Using Fetch</h3>
+    <p>The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline, such as requests and responses<br>
+    Basic request:<br> 
+    fetch('http://example.com/movies.json')<br>
+    .then(response => response.json())<br>
+    .then(data => console.log(data);<br>
+    Checking that the fetch was successful:<br>
+    fetch('flowers.jpg')<br>
+    .then(response => {<br>
+      if (!response.ok) {<br>
+        throw new Error('Network response was not ok');<br>
+      }<br>
+      return response.blob();<br>
+    })<br>
+    .then(myBlob => {<br>
+      myImage.src = URL.createObjectURL(myBlob);<br>
+    })<br>
+    .catch(error => {<br>
+      console.error('There has been a problem with your fetch operation:', error);<br>
+    });</p>
     </main>
     <footer>
     </footer>
